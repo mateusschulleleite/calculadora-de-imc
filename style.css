@@ -1,0 +1,104 @@
+@import url(./reset.css);
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #FFEEEE;  
+    background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);
+    background: linear-gradient(to right, #DDEFBB, #FFEEEE); 
+
+}
+
+.container__titulo {
+    font-weight: 500;
+    font-size: 25px;
+    color: #006666;
+    margin: 0.6em 20px;
+}
+
+.container__descricao {
+    text-align: justify;
+    margin: 0em 20px;
+    font-size: 15px;
+}
+
+.container__imc {
+    margin: 1em 20px;
+    border-radius: 8px;
+    padding: 1.5em 1em;
+}
+
+input {
+    display: block;
+    margin: 0.9em 0em;
+    width: 70%;
+    height: 3em;
+    border-radius: 5px;
+    border: none;
+    border-bottom: solid 2px #008584;
+    padding-left: 1em;
+}
+
+.imc__calcular {
+    background-color: #008584;
+    display: inline-block;
+    padding: 0.7em 1em;
+    border-radius: 8px;
+    margin: 0.6em 0;
+    color: white;
+}
+
+.imc__calcular:hover {
+    background-color: #006666;
+}
+
+table {
+    margin: 0.5em 20px;
+    border: 1px solid #008584;
+}
+
+thead {
+    background-color: #008584;
+    color: white;
+    font-weight: 500;
+}
+tr {
+    border-bottom: #006666 solid 1px;
+}
+
+td {
+    padding: 0.5em;
+}
+
+.tabela {
+    display: flex;
+    justify-content: left;
+}
+
+@media screen and (min-width: 1024px) {
+
+    body {
+        padding: 1.5em 4em;
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    
+    .container__titulo {
+        font-size: 30px;
+    }
+
+    input {
+        width: 50%;
+    }
+
+    table {
+        width: 80%;
+        height: 100px;
+        margin: 0 0;
+
+    }
+
+    .tabela {
+        justify-content: center;
+        padding: 20px 0;
+    }
+}
